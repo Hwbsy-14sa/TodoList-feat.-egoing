@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>apple</li>
+        <li>orange</li>
+        <li>banana</li>
+        <li>strawberry</li>
+    </ul>
+    <script>
+        /*
+        filter, includes, from을 사용해서 문자열 'e'가 포함된
+        노드리스트 배열을 만들어서 반환하기
+        */
+        function print() {
+        // querySelectorAll을 이용해 HTML List를 가져온다.
+        let list = document.querySelectorAll("li");
+        // from을 이용해 list의 값을 배열로 복사한다.
+        let listArray = Array.from(list);
+            //console.log(listArray) => object
+
+        // filter를 이용해 조건에 적합한 항목만 배열로 추려낸다.    
+        let eArray = listArray.filter((v) => {
+            // filter 에서 배열로 추려내기 위해 includes로 "e"가 포한 여부를 검증한다.
+            return v.innerText.includes("e");
+        });
+
+        console.log(eArray);
+
+        return eArray;
+        }
+        
+        print();
+        
+    
+    </script>
+</body>
+</html>
