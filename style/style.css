@@ -1,0 +1,103 @@
+/* 초기셋팅 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --gap-margin: 15px;
+  --gap-padding: 15px;
+
+  --font-size: 1.5em;
+
+  --border-radius: 10px;
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+
+  margin: 5px auto;
+  padding: var(--gap-padding);
+  background-color: lightgray;
+  border-radius: var(--border-radius);
+  border: 1px solid black;
+}
+
+/* header부 */
+.headerContainer {
+  text-align: center;
+}
+
+.clock_View {
+  font-size: 4em;
+  text-shadow: 1px 1px 2px grey;
+}
+
+/* form 부 */
+.todo_Form {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width: 90%;
+  height: 40px;
+
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: var(--font-size);
+  font-weight: bold;
+
+  padding: 0;
+}
+
+/* todo부 */
+.todo_List {
+  padding: var(--gap-padding);
+  width: 95%;
+}
+
+li {
+  margin-bottom: var(--gap-margin);
+  font-size: var(--font-size);
+  list-style: none;
+
+  display: flex;
+}
+
+.todo_Content {
+  margin-left: var(--gap-margin);
+}
+
+.delBtn_list {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: var(--gap-padding);
+
+  color: white;
+  background-color: red;
+
+  border: none;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerContainer button {
+  width: 40px;
+  font-size: var(--font-size);
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  background-color: lightgreen;
+  color: white;
+}
