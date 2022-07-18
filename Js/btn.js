@@ -8,7 +8,7 @@ function deleteHandler() {
 }
 
 function init() {
-  delBtn.addEventListener("click", deleteHandler);
+  delBtn.addEventListener("click", deleteHandler); // delete 버튼 실행 함수
 }
 
 init();
